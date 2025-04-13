@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>Portfolio</title>
+</head>
+<body>
+    <nav>
+        <div class="nav_content">
+            <div class="logo"><a href="#">JEFFI</a></div>
+            <label for="check" class="checkbox">
+                <i class="ri-menu-line"></i>
+            </label>
+            <input type="checkbox" name="check" id="check">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#services">Service</a></li>
+                <li><a href="#certificates">Certificates</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="section">
+        <div class="section_container">
+            <div class="content">
+                <p class="subtitle">HELLO</p>
+                <h1 class="title">
+                    I'am<span>Jeffi<br></span> Web Developer
+                </h1>
+                <p class="description">
+                    A passionate developer who crafts clean and efficient web solutions.
+                </p>
+                <div class="action_btns">
+                    <button class="hire_me">Hire Me</button>
+                    <button class="portfolio">Portfolio</button>
+                </div>
+            </div>
+            <div class="image">
+                <img src="JEPI.jpeg" alt="profile">
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about_section">
+        <h2>About Me</h2>
+        <p>
+          Hello! My name is JEFFI ALIF FIRMANSYAH , and I am a student at SMKN 1 Nglegok, currently in class 11 TKJ 2. I have a strong interest in computer engineering and networking, which is the main focus of my studies.
+
+          At school, I study various aspects of technology, including computer networks, programming, and hardware. I believe that with the knowledge and skills I gain, I can build a successful career in this industry.
+          
+          With a passion for continuous learning and development, I hope to contribute to technological advancements and make a positive impact on society in the future.
+        </p>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills_section">
+        <h2>My Skills</h2>
+        <div class="skill">
+            <h3>HTML</h3>
+            <div class="progress-bar">
+                <span class="progress" style="width: 90%;"></span>
+            </div>
+        </div>
+        <div class="skill">
+            <h3>CSS</h3>
+            <div class="progress-bar">
+                <span class="progress" style="width: 85%;"></span>
+            </div>
+        </div>
+        <div class="skill">
+            <h3>JavaScript</h3>
+            <div class="progress-bar">
+                <span class="progress" style="width: 80%;"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services_section">
+        <h2>Services</h2>
+        <div class="services_container">
+            <div class="service_card">
+                <i class="ri-code-line"></i>
+                <h3>Web Development</h3>
+                <p>Building responsive and efficient websites and web apps.</p>
+            </div>
+            <div class="service_card">
+                <i class="ri-pencil-ruler-line"></i>
+                <h3>Web Design</h3>
+                <p>Creating visually appealing and user-centric designs.</p>
+            </div>
+            <div class="service_card">
+                <i class="ri-bar-chart-box-line"></i>
+                <h3>SEO Optimization</h3>
+                <p>Optimizing websites to rank better on search engines.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certificates Section -->
+    <section id="certificates" class="certificates_section">
+        <h2>Certificates</h2>
+        <div class="certificates_container">
+            <!-- Replace the img src with actual certificate image paths -->
+            <div class="certificate">
+                <img src="certificate1.jpg" alt="Certificate 1" class="cert_image" onclick="openModal(this)">
+            </div>
+            <div class="certificate">
+                <img src="certificate2.jpg" alt="Certificate 2" class="cert_image" onclick="openModal(this)">
+            </div>
+            <div class="certificate">
+                <img src="certificate3.jpg" alt="Certificate 3" class="cert_image" onclick="openModal(this)">
+            </div>
+            <div class="certificate">
+                <img src="certificate4.jpg" alt="Certificate 4" class="cert_image" onclick="openModal(this)">
+            </div>
+            <div class="certificate">
+                <img src="certificate5.jpg" alt="Certificate 5" class="cert_image" onclick="openModal(this)">
+            </div>
+            <div class="certificate">
+                <img src="certificate6.jpg" alt="Certificate 6" class="cert_image" onclick="openModal(this)">
+            </div>
+            <div class="certificate">
+                <img src="certificate7.jpg" alt="Certificate 7" class="cert_image" onclick="openModal(this)">
+            </div>
+            <div class="certificate">
+                <img src="certificate8.jpg" alt="Certificate 8" class="cert_image" onclick="openModal(this)">
+            </div>
+            <div class="certificate">
+                <img src="certificate9.jpg" alt="Certificate 9" class="cert_image" onclick="openModal(this)">
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div id="modal" class="modal">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <img class="modal-content" id="modalImage">
+            <div id="caption"></div>
+        </div>
+    </section>
+
+    <!-- Script for Modal Functionality -->
+    <script>
+        function openModal(imageElement) {
+            const modal = document.getElementById('modal');
+            const modalImg = document.getElementById('modalImage');
+            const caption = document.getElementById('caption');
+            modal.style.display = 'block';
+            modalImg.src = imageElement.src;
+            caption.innerHTML = imageElement.alt;
+        }
+
+        function closeModal() {
+            const modal = document.getElementById('modal');
+            modal.style.display = 'none';
+        }
+    </script>
+
+    <footer>
+        <div class="footer_container">
+            <p>© 2024 Jeffi. All Rights Reserved.</p>
+            <div class="socials">
+                <a href="#"><i class="ri-facebook-fill"></i></a>
+                <a href="#"><i class="ri-twitter-fill"></i></a>
+                <a href="#"><i class="ri-instagram-fill"></i></a>
+                <a href="#"><i class="ri-linkedin-fill"></i></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
