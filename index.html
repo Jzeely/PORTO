@@ -1,177 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet"/>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <title>Portfolio</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Modern Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous" defer></script>
+  <script src="script.js" defer></script>
 </head>
 <body>
-    <nav>
-        <div class="nav_content">
-            <div class="logo"><a href="#">JEFFI</a></div>
-            <label for="check" class="checkbox">
-            </label>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#services">Service</a></li>
-                <li><a href="#certificates">Certificates</a></li>
-            </ul>
-        </div>
-    </nav>
+  <!-- Navbar -->
+  <nav>
+    <div class="nav_content">
+      <div class="logo"><a href="#">MyPortfolio</a></div>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Level Skills</a></li>
+        <li><a href="#services">Hard Skills</a></li>
+        <li><a href="#certificates">Certificates</a></li>
+      </ul>
+    </div>
+  </nav>
 
-    <!-- Home Section -->
-    <section id="home" class="section">
-        <div class="section_container">
-            <div class="content">
-                <p class="subtitle">HELLO</p>
-                <h1 class="title">
-                    I'am<span>Jeffi<br></span> Web Developer
-                </h1>
-                <p class="description">
-                    A passionate developer who crafts clean and efficient web solutions.
-                </p>
-                <div class="action_btns">
-                    <button class="hire_me">Hire Me</button>
-                    <button class="portfolio">Portfolio</button>
-                </div>
-            </div>
-            <div class="image">
-                <img src="jee.jpg" alt="profile">
-            </div>
+  <!-- Home Section -->
+  <section id="home" class="section">
+    <div class="section_container">
+      <div class="content">
+        <h2 class="subtitle">Welcome</h2>
+        <h1 class="title">I'm <span>Web Developer</span></h1>
+        <p class="description">Creating modern and interactive web experiences with clean design and animation effects.</p>
+        <div class="action_btns">
+          <button id="contactBtn">Contact Me</button>
+          <button id="downloadBtn">Download CV</button>
         </div>
-    </section>
+      </div>
+      <div class="image">
+        <img src="JEPI.jpg" alt="Profile Picture" />
+      </div>
+    </div>
+  </section>
 
-    <!-- About Section -->
-    <section id="about" class="about_section">
-        <h2>About Me</h2>
-        <p>
-          Hello! My name is JEFFI ALIF FIRMANSYAH , and I am a student at SMKN 1 Nglegok, currently in class 11 TKJ 2. I have a strong interest in computer engineering and networking, which is the main focus of my studies.
+  <!-- About Section -->
+  <section id="about" class="section about_section">
+    <div class="block about_block">
+      <h2 class="section_title">About Me</h2>
+      <p class="about_text">
+        Hello! <span>My name</span> is <span>JEFFI ALIF FIRMANSYAH</span>, and I am a student at SMKN 1 Nglegok, currently in class 11 TKJ 2. I have a strong interest in computer engineering and networking, which is the main focus of my studies.
 
           At school, I study various aspects of technology, including computer networks, programming, and hardware. I believe that with the knowledge and skills I gain, I can build a successful career in this industry.
           
           With a passion for continuous learning and development, I hope to contribute to technological advancements and make a positive impact on society in the future.
-        </p>
-    </section>
+        
+      </p>
+    </div>
+  </section>
 
-    <!-- Skills Section -->
-    <section id="skills" class="skills_section">
-        <h2>My Skills</h2>
-        <div class="skill">
-            <h3>HTML</h3>
-            <div class="progress-bar">
-                <span class="progress" style="width: 90%;"></span>
-            </div>
+  <!-- Skills Section -->
+  <section id="skills" class="section skills_section">
+    <div class="block skills_block">
+      <h2 class="section_title">Level Skills</h2>
+      <div class="skill_item">
+        <span>Mikrotik</span>
+        <div class="progress_bar">
+          <div class="progress html"></div>
         </div>
-        <div class="skill">
-            <h3>CSS</h3>
-            <div class="progress-bar">
-                <span class="progress" style="width: 85%;"></span>
-            </div>
+      </div>
+      <div class="skill_item">
+        <span>Sysadmin</span>
+        <div class="progress_bar">
+          <div class="progress css"></div>
         </div>
-        <div class="skill">
-            <h3>JavaScript</h3>
-            <div class="progress-bar">
-                <span class="progress" style="width: 80%;"></span>
-            </div>
+      </div>
+      <div class="skill_item">
+        <span>Infrastruktur</span>
+        <div class="progress_bar">
+          <div class="progress js"></div>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
-    <!-- Services Section -->
-    <section id="services" class="services_section">
-        <h2>Services</h2>
-        <div class="services_container">
-            <div class="service_card">
-                <i class="ri-code-line"></i>
-                <h3>Web Development</h3>
-                <p>Building responsive and efficient websites and web apps.</p>
-            </div>
-            <div class="service_card">
-                <i class="ri-pencil-ruler-line"></i>
-                <h3>Web Design</h3>
-                <p>Creating visually appealing and user-centric designs.</p>
-            </div>
-            <div class="service_card">
-                <i class="ri-bar-chart-box-line"></i>
-                <h3>SEO Optimization</h3>
-                <p>Optimizing websites to rank better on search engines.</p>
-            </div>
-        </div>
-    </section>
+  <!-- Services Section -->
+  <section id="services" class="section services_section">
+    <h2 class="section_title">My Services</h2>
+    <div class="services_container">
+      <div class="service_card">
+        <i class="fas fa-code"></i>
+        <h3>MikroTik</h3>
+        <p>MikroTik Fundamental, Routing, Tunnel, Wireless, Qos, Load Balance, Bridging, Firewall NAT.</p>
+      </div>
+      <div class="service_card">
+        <i class="fas fa-paint-brush"></i>
+        <h3>Sysadmin</h3>
+        <p>installation and konfigurasi Linux Debian.</p>
+      </div>
+      <div class="service_card">
+        <i class="fas fa-laptop-code"></i>
+        <h3>Infrastruktur</h3>
+        <p>Splicing Fiber Optik, installation LAN, Access Point TP-LINK, Konfigurasi LHG, Maintenance server, installation HTB.</p>
+      </div>
+      <div class="service_card">
+        <i class="fas fa-server"></i>
+        <h3>Web Development</h3>
+        <p>HTML, CSS, Java Script.</p>
+      </div>
+    </div>
+  </section>
 
-    <!-- Certificates Section -->
-    <section id="certificates" class="certificates_section">
-        <h2>Certificates</h2>
-        <div class="certificates_container">
-            <!-- Replace the img src with actual certificate image paths -->
-            <div class="certificate">
-                <img src="certificate1.jpg" alt="Certificate 1" class="cert_image" onclick="openModal(this)">
-            </div>
-            <div class="certificate">
-                <img src="certificate2.jpg" alt="Certificate 2" class="cert_image" onclick="openModal(this)">
-            </div>
-            <div class="certificate">
-                <img src="certificate3.jpg" alt="Certificate 3" class="cert_image" onclick="openModal(this)">
-            </div>
-            <div class="certificate">
-                <img src="certificate4.jpg" alt="Certificate 4" class="cert_image" onclick="openModal(this)">
-            </div>
-            <div class="certificate">
-                <img src="certificate5.jpg" alt="Certificate 5" class="cert_image" onclick="openModal(this)">
-            </div>
-            <div class="certificate">
-                <img src="certificate6.jpg" alt="Certificate 6" class="cert_image" onclick="openModal(this)">
-            </div>
-            <div class="certificate">
-                <img src="certificate7.jpg" alt="Certificate 7" class="cert_image" onclick="openModal(this)">
-            </div>
-            <div class="certificate">
-                <img src="certificate8.jpg" alt="Certificate 8" class="cert_image" onclick="openModal(this)">
-            </div>
-            <div class="certificate">
-                <img src="certificate9.jpg" alt="Certificate 9" class="cert_image" onclick="openModal(this)">
-            </div>
-        </div>
+  <!-- Certificates Section -->
+  <section id="certificates" class="section certificates_section">
+    <div class="block certificates_block">
+      <h2 class="section_title">Certificates</h2>
+      <div class="certificates_container">
+        <img src="certificate1.jpg" alt="Certificate 1" class="cert_image" />
+        <img src="certificate2.jpg" alt="Certificate 2" class="cert_image" />
+        <img src="certificate3.jpg" alt="Certificate 3" class="cert_image" />
+        <img src="certificate4.jpg" alt="Certificate 3" class="cert_image" />
+        <img src="certificate5.jpg" alt="Certificate 3" class="cert_image" />
+        <img src="certificate6.jpg" alt="Certificate 3" class="cert_image" />
+        <img src="certificate7.jpg" alt="Certificate 3" class="cert_image" />
+        <img src="certificate8.jpg" alt="Certificate 3" class="cert_image" />
+        <img src="certificate9.jpg" alt="Certificate 3" class="cert_image" />
+      </div>
+    </div>
+  </section>
 
-        <!-- Modal -->
-        <div id="modal" class="modal">
-            <span class="close" onclick="closeModal()">&times;</span>
-            <img class="modal-content" id="modalImage">
-            <div id="caption"></div>
-        </div>
-    </section>
+  <!-- Footer -->
+  <footer>
+    <div class="footer_container">
+      <p>&copy; 2025 MyPortfolio. All rights reserved.</p>
+      <div class="socials">
+        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+      </div>
+    </div>
+  </footer>
 
-    <!-- Script for Modal Functionality -->
-    <script>
-        function openModal(imageElement) {
-            const modal = document.getElementById('modal');
-            const modalImg = document.getElementById('modalImage');
-            const caption = document.getElementById('caption');
-            modal.style.display = 'block';
-            modalImg.src = imageElement.src;
-            caption.innerHTML = imageElement.alt;
-        }
+  <!-- Modal for Certificates -->
+<div id="certModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="certImg" />
+  <div id="caption"></div>
+</div>
 
-        function closeModal() {
-            const modal = document.getElementById('modal');
-            modal.style.display = 'none';
-        }
-    </script>
-
-    <footer>
-        <div class="footer_container">
-            <p>© 2024 Jeffi. All Rights Reserved.</p>
-            <div class="socials">
-                <a href="#"><i class="ri-facebook-fill"></i></a>
-                <a href="#"><i class="ri-twitter-fill"></i></a>
-                <a href="#"><i class="ri-instagram-fill"></i></a>
-                <a href="#"><i class="ri-linkedin-fill"></i></a>
-            </div>
-        </div>
-    </footer>
 </body>
 </html>
